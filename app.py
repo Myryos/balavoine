@@ -58,8 +58,9 @@ def api():
         }
         dict_divs.update({"Article" + str(i): dict_div})
         i = i + 1
+        print(dict_div)
     json = jsonify(dict_divs)
-    return  json
+    return  jsonify(dict_divs)
 
 if __name__ == '__app__':
     app.run(host="0.0.0.0", port="80")
